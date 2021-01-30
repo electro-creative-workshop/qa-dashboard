@@ -1,0 +1,37 @@
+[
+    {
+        "key": "hiddenvalleyanalytics",
+        "name": "Hidden Valley Analytics",
+        "parameters": {
+            "adhoc_run": true,
+            "adhoc_site": "",
+            "adhoc_parallelism": 1,
+            "adhoc_custom_glob": "src/test/java/com/clorox/web/pages/analytics/hiddenvalley/HiddenValleyAnalyticsTest.java"
+        }
+    },
+    {
+        "key": "evercleanuk",
+        "name": "Ever Clean UK",
+        "parameters": {
+            "adhoc_run": true,
+            "adhoc_site": "ever_clean_uk",
+            "adhoc_parallelism": 1
+          }
+    },
+    {
+        "key": "forumla409",
+        "name": "Formula 409",
+        "parameters": {
+            "adhoc_run": true,
+            "adhoc_site": "formula409"
+        }
+    },
+    {
+        "key": "brita",
+        "name": "Brita",
+        "parameters": {
+            "adhoc_run": true,
+            "adhoc_site": "Brita"
+        }
+    }
+]

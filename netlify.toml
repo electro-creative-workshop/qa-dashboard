@@ -1,0 +1,3 @@
+[build]
+  functions-build = "lambda/"
+  publish = "out/"
