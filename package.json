@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "build:next": "next build",
-    // "build:lambda": "netlify-lambda build lambda",
     "start": "next start"
   },
   "dependencies": {
