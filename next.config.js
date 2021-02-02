@@ -1,3 +1,9 @@
 module.exports = {
-    distDir: 'out',
+    exportPathMap: async function () {
+        const paths = {
+            '/': { page: '/' }
+        };
+    
+        return paths;
+    }
 }
