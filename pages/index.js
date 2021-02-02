@@ -1,22 +1,26 @@
 import Head from 'next/head'
+import { useState } from 'react';
 import data from "../data/config.json"
 
 export default function Home() {
-
-  // const handleClick = api => e => {
-  //   e.preventDefault()
-
-  //   this.setState({ loading: true })
-  //   fetch("/.netlify/functions/" + api)
-  //     .then(response => response.json())
-  //     .then(json => this.setState({ loading: false, msg: json.msg }))
-  // }
+  const [message, setMessage] = useState();
 
   const handleClick = (e) => {
-    console.log('handleClick: ', e.target.innerHTML);
-       fetch("/.netlify/functions/triggerTest")
+
+    const siteName = e.target.innerHTML;
+    const siteData = data.find(site => site.name === siteName);
+
+    const qs = Object.keys(siteData.parameters)
+      .map(key => `${key}=${siteData.parameters[key]}`)
+      .join('&');
+
+    fetch(`/.netlify/functions/triggerTest?${qs}`)
       .then(response => response.json())
-      .then(json => this.setState({ loading: false, msg: json.msg }))
+      .then(json => {
+        console.log("return val:",json)
+      })
+
+    setMessage(`Test workflow started for ${siteName}`);
   }
 
   return (
@@ -24,13 +28,21 @@ export default function Home() {
       <Head>
         <title>QA Automation Dashboard</title>
       </Head>
-      <header  className="flex justify-center">
-        <h1>QA Automation Dashboard</h1>
+      <header className="bg-gray-200">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 p-6">
+          <div>
+            <h1 className="text-3xl font-bold text-blue-500">QA Automation Dashboard</h1>
+          </div>
+          <div className="flex md:justify-end">
+            <a href="https://app.circleci.com/pipelines/github/electro-creative-workshop/qa-automation-selenide" target="_blank" className="hover:underline my-auto text-blue-600">Pipelines</a>
+          </div>
+        </div>
       </header>
-      <section className="grid grid-cols-3 gap-4">
+      <section className="flex justify-center p-4 text-sm text-red-500">{message}</section>
+      <section className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
         {
             data.map( site => (
-                <button onClick={handleClick} className="rounded-lg" key={site.key}>{site.name}</button>
+                <div onClick={handleClick} className="flex justify-center mx-2 md:mx-0 bg-gray-200 rounded-lg p-4 cursor-pointer text-xl text-gray-700 hover:underline" key={site.key}>{site.name}</div>
             ))
         }
       </section>

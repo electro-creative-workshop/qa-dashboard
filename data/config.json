@@ -1,37 +1,166 @@
 [
     {
-        "key": "hiddenvalleyanalytics",
-        "name": "Hidden Valley Analytics",
+        "key": "ayudin",
+        "name": "Ayudin",
         "parameters": {
-            "adhoc_run": true,
-            "adhoc_site": "",
-            "adhoc_parallelism": 1,
-            "adhoc_custom_glob": "src/test/java/com/clorox/web/pages/analytics/hiddenvalley/HiddenValleyAnalyticsTest.java"
-        }
-    },
-    {
-        "key": "evercleanuk",
-        "name": "Ever Clean UK",
-        "parameters": {
-            "adhoc_run": true,
-            "adhoc_site": "ever_clean_uk",
-            "adhoc_parallelism": 1
-          }
-    },
-    {
-        "key": "forumla409",
-        "name": "Formula 409",
-        "parameters": {
-            "adhoc_run": true,
-            "adhoc_site": "formula409"
+            "adhoc_site": "ayudin"
         }
     },
     {
         "key": "brita",
         "name": "Brita",
         "parameters": {
-            "adhoc_run": true,
             "adhoc_site": "Brita"
+        }
+    },
+    {
+        "key": "clorox",
+        "name": "Clorox",
+        "parameters": {
+            "adhoc_site": "clorox"
+        }
+    },
+    {
+        "key": "cookiebanner",
+        "name": "Cookie Banner",
+        "parameters": {
+            "adhoc_site": "cookiebanner"
+        }
+    },
+    {
+        "key": "evercleanus",
+        "name": "Ever Clean US",
+        "parameters": {
+            "adhoc_site": "ever_clean"
+        }
+    },
+    {
+        "key": "evercleanuk",
+        "name": "Ever Clean UK",
+        "parameters": {
+            "adhoc_site": "ever_clean_uk",
+            "adhoc_parallelism": 1
+          }
+    },
+    {
+        "key": "freshstep",
+        "name": "Fresh Step",
+        "parameters": {
+            "adhoc_site": "freshstep"
+        }
+    },
+    {
+        "key": "forumla409",
+        "name": "Formula 409",
+        "parameters": {
+            "adhoc_site": "formula409"
+        }
+    },
+    {
+        "key": "glad",
+        "name": "Glad",
+        "parameters": {
+            "adhoc_site": "glad"
+        }
+    },
+    {
+        "key": "greenworks",
+        "name": "Green Works",
+        "parameters": {
+            "adhoc_site": "green_works"
+        }
+    },
+    {
+        "key": "handiwipes",
+        "name": "Handi Wipes",
+        "parameters": {
+            "adhoc_site": "handi_wipes"
+        }
+    },
+    {
+        "key": "hiddenvalleyanalytics",
+        "name": "Hidden Valley Analytics",
+        "parameters": {
+            "adhoc_site": "",
+            "adhoc_parallelism": 1,
+            "adhoc_custom_glob": "src/test/java/com/clorox/web/pages/analytics/hiddenvalley/HiddenValleyAnalyticsTest.java"
+        }
+    },
+    {
+        "key": "hiddenvalleykitchens",
+        "name": "Hidden Valley Kitchens",
+        "parameters": {
+            "adhoc_site": "hiddenvalleykitchens"
+        }
+    },
+    {
+        "key": "hiddenvalleyranchshop",
+        "name": "Hidden Valley Ranch Shop",
+        "parameters": {
+            "adhoc_site": "hiddenvalleyranchshop"
+        }
+    },
+    {
+        "key": "hiddenvalleyrecipes",
+        "name": "Hidden Valley Recipes",
+        "parameters": {
+            "adhoc_site": "hiddenvalleyrecipes"
+        }
+    },
+    {
+        "key": "liquidplumr",
+        "name": "Liquid Plumr",
+        "parameters": {
+            "adhoc_site": "liquidplumr"
+        }
+    },
+    {
+        "key": "mistolin",
+        "name": "Mistolin",
+        "parameters": {
+            "adhoc_site": "mistolin"
+        }
+    },
+    {
+        "key": "pinesol",
+        "name": "Pine-Sol",
+        "parameters": {
+            "adhoc_site": "pinesol"
+        }
+    },
+    {
+        "key": "ppd",
+        "name": "Clorox Pro (PPD)",
+        "parameters": {
+            "adhoc_site": "cloroxpro"
+        }
+    },
+    {
+        "key": "registration",
+        "name": "Site Registration",
+        "parameters": {
+            "adhoc_site": "registration"
+        }
+    },
+    {
+        "key": "sos",
+        "name": "SOS - Clorox",
+        "parameters": {
+            "adhoc_site": "sos_clorox"
+        }
+    },
+    {
+        "key": "soyvay",
+        "name": "Soy Vay",
+        "parameters": {
+            "adhoc_site": "soyvay"
+        }
+    },
+    {
+        "key": "tcc",
+        "name": "The Clorox Company",
+        "parameters": {
+            "adhoc_site": "thecloroxcompany"
         }
     }
 ]
