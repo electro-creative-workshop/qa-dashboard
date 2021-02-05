@@ -1,4 +1,4 @@
 [build]
   functions = "lambda/"
-  command = "npm run build && npm run export"
+  command = "npm run build"
   publish = "out"
