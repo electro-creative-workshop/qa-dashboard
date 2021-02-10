@@ -27,7 +27,6 @@ export default function ButtonGrid({message,setMessage}){
                     <div key={site.name} className="inline-grid grid-cols-2 gap-x-4">
                         <div className="justify-start text-xl">{site.name}:</div> <span className="justify-end"><button className="m-auto bg-gray-200 rounded-lg p-2 cursor-not-allowed text-gray-400 ">QA</button> <button onClick={handleClick} className="m-auto bg-gray-200 rounded-lg p-2 cursor-pointer text-gray-700 hover:underline">Prod</button></span>
                     </div>
-                    // <div onClick={handleClick} className="flex justify-center mx-2 md:mx-0 bg-gray-200 rounded-lg p-4 cursor-pointer text-xl text-gray-700 hover:underline" key={site.key}>{site.name}</div>
                 ))
             }
             </section>
