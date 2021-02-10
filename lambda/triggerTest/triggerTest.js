@@ -14,7 +14,7 @@ const handler = async function (event) {
   }
 
   const body = {
-    "branch": "api",
+    "branch": process.env.CIRCLE_BRANCH,
     "parameters": parameters
   }
 
