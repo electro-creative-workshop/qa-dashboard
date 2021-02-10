@@ -10,7 +10,6 @@ export default function Header({session, signIn}){
                     ? <a href="https://app.circleci.com/pipelines/github/electro-creative-workshop/qa-automation-selenide" target="_blank" className="hover:underline my-auto text-blue-600">Pipelines</a>
                     : <button onClick={() => signIn()} className="hover:underline my-auto text-blue-600">Sign in</button>
                 }
-              
             </div>
           </div>
         </header>

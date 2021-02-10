@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { useState } from 'react';
-import { signIn, signOut, useSession } from 'next-auth/client'
+import { signIn, useSession } from 'next-auth/client'
 import Header from "../components/header"
 import ButtonGrid from "../components/buttonGrid"
 
 export default function Home() {
-  const [message, setMessage] = useState();
+  const [ message, setMessage ] = useState();
   const [ session, loading ] = useSession();
 
   return (
