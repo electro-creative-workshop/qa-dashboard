@@ -21,10 +21,12 @@ export default function ButtonGrid({message,setMessage}){
     return(
         <>
             <section className="flex justify-center p-4 text-sm text-red-500">{message}</section>
-            <section className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+            <section className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 px-6 pb-6">
             {
                 data.map( site => (
-                    <div onClick={handleClick} className="flex justify-center mx-2 md:mx-0 bg-gray-200 rounded-lg p-4 cursor-pointer text-xl text-gray-700 hover:underline" key={site.key}>{site.name}</div>
+                    <div key={site.name} className="inline-grid grid-cols-2 gap-x-4">
+                        <div className="justify-start text-xl">{site.name}:</div> <span className="justify-end"><button className="m-auto bg-gray-200 rounded-lg p-2 cursor-not-allowed text-gray-400 ">QA</button> <button onClick={handleClick} className="m-auto bg-gray-200 rounded-lg p-2 cursor-pointer text-gray-700 hover:underline">Prod</button></span>
+                    </div>
                 ))
             }
             </section>
